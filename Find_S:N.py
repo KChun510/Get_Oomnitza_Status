@@ -7,7 +7,9 @@ import csv
 
 
 driver = webdriver.Chrome()
-driver.get("https://creditkarma.oomnitza.com/")
+
+#Change url to company Oomnitza 
+driver.get("URL-to-Oomnitza")
 
 
 def write_csv():
@@ -44,7 +46,7 @@ def get_users():
 	csvfile.close()
 	return user_list
 
-
+#Input your own login credentials
 def login():
 	okta_butt = driver.find_element(By.CLASS_NAME, "ssoLink")	
 	okta_butt.click()
@@ -52,11 +54,12 @@ def login():
 
 	time.sleep(2)
 
+	
 	user = driver.find_element(By.ID, "input28")
-	user.send_keys("kyle.chun")
+	user.send_keys("")#input your own user
 
 	pass_word = driver.find_element(By.ID, "input36")
-	pass_word.send_keys("Illcatchagrenadeforyou!@1")
+	pass_word.send_keys("") #input your own pass
 
 	time.sleep(2)
 
