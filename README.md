@@ -1,5 +1,5 @@
 # Get_Oomnitza_Status
-"Oomnitza" - Enterprise Technology Management. Written in python using the selenium library, navigate through Oomnitza UI to collect asset status's. 
+"Oomnitza" - Enterprise Technology Management. Written in python using the selenium library, navigate through Oomnitza UI to collect asset statuses. 
 
 Instructions:
 1. Search for Assets Via user email. Save User Email in csv file and import VIA csv.
